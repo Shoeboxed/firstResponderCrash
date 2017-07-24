@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TitleViewController" customModule="firstResponderCrash" customModuleProvider="target">
+            <connections>
+                <outlet property="logoView" destination="89O-vA-3Tj" id="hxF-Bx-dYN"/>
+                <outlet property="slideView" destination="VGq-Ga-Jn1" id="hDO-zT-JYN"/>
+                <outlet property="view" destination="iN0-l3-epB" id="nwi-tI-Vsj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Apple" translatesAutoresizingMaskIntoConstraints="NO" id="89O-vA-3Tj">
+                    <rect key="frame" x="87" y="40" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="9wi-tE-qp2"/>
+                        <constraint firstAttribute="width" constant="200" id="hnH-lH-WfL"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VGq-Ga-Jn1">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Responder Crash" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWX-K5-lHi">
+                            <rect key="frame" x="0.0" y="320" width="375" height="33.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="MWX-K5-lHi" firstAttribute="top" secondItem="VGq-Ga-Jn1" secondAttribute="top" constant="320" id="1CF-lb-US7"/>
+                        <constraint firstItem="MWX-K5-lHi" firstAttribute="leading" secondItem="VGq-Ga-Jn1" secondAttribute="leading" id="HBw-VG-Dq6"/>
+                        <constraint firstAttribute="trailing" secondItem="MWX-K5-lHi" secondAttribute="trailing" id="j1P-cg-wPj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.23137254900000001" green="0.26274509800000001" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VGq-Ga-Jn1" secondAttribute="trailing" id="3YR-My-S4q"/>
+                <constraint firstItem="VGq-Ga-Jn1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4A6-Zv-u1Y"/>
+                <constraint firstItem="89O-vA-3Tj" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="4qa-Ti-f77"/>
+                <constraint firstItem="VGq-Ga-Jn1" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="h83-Io-DMY"/>
+                <constraint firstItem="89O-vA-3Tj" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="40" id="meZ-Mk-sEQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="VGq-Ga-Jn1" secondAttribute="bottom" id="p1K-oR-WYp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Apple" width="200" height="200"/>
+    </resources>
+</document>
